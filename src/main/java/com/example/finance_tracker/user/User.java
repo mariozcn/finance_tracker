@@ -26,7 +26,7 @@ public class User {
     private LocalDateTime createdAt;
 
     public void setId(Long id) {
-        id = id;
+        this.id = id;
     }
 
     public void setEmail(String email) {
@@ -66,7 +66,7 @@ public class User {
     }
 
     public User(Long id, String email, String passwordHash, String currencyCode, LocalDateTime createdAt) {
-        id = id;
+        this.id = id;
         this.email = email;
         this.passwordHash = passwordHash;
         this.currencyCode = currencyCode;
