@@ -2,6 +2,7 @@ package com.example.finance_tracker.user;
 
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -22,6 +23,7 @@ public class User {
     @Column(name="currency_code")
     private String currencyCode = "RON";
 
+    @CreationTimestamp
     @Column(name="created_at",nullable = false)
     private LocalDateTime createdAt;
 
